@@ -42,11 +42,6 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "http://google.com",
-            "http://youtube.com",
-            "http://facebook.com",
-            "http://amazon.com"});
             this.comboBox1.Location = new System.Drawing.Point(77, 36);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(677, 28);
@@ -94,7 +89,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 43);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Buscar";
+            this.button1.Text = "Ir";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -109,6 +104,7 @@
             this.webView.Source = new System.Uri("https://www.google.com/", System.UriKind.Absolute);
             this.webView.TabIndex = 5;
             this.webView.ZoomFactor = 1D;
+            this.webView.Click += new System.EventHandler(this.webView_Click);
             // 
             // Form1
             // 
